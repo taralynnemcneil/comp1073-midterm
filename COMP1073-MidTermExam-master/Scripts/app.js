@@ -1,10 +1,19 @@
+/* ===============================================
+		  File Name: App
+          Authour: Tara McNeil
+          Site Name: Portfolio | Tara McNeil
+          File Description: Javascript
+================================================ */
+
 // setup your IIFE (Immediately Invoked Function Expression)
 var travelReport = (function () {
 
 "use strict";
 console.log("App Started...")
 
-// replace paragraphs
+/* ==============================================
+        Replace Paragraphs
+    ============================================== */
 
 // intro paragraph
 var replaceIntroParagraph = function () {
@@ -98,6 +107,17 @@ replaceGavdos();
 
 // contact output to console ----
 
-
+    var firstName;
+    firstName = document.getElementById("firstName");
+    var lastName;
+    lastName = document.getElementById("lastName");
+    var email;
+    email = document.getElementById("email");
+    var comments;
+    comments = document.getElementById("comments");
+    var button = document.getElementById('submit');
+    button.addEventListener("click", function (){
+        console.log("Clicked", firstName.value, lastName.value, email.value, comments.value);
+    });
 })();
 
